@@ -31,7 +31,7 @@ class TestCalc(unittest.TestCase):
 		'''
 			Check if calculator can performe 4 basic operations properly
 		'''
-		self.assertEqual(calc.calc('+','1','1'), 1)
+		self.assertEqual(calc.calc('+','1','1'), 2)
 		self.assertEqual(calc.calc('-','11','111'), -100)
 		self.assertEqual(calc.calc('*','11','11'), 121)
 		self.assertEqual(calc.calc('/','33','3'), 11)
