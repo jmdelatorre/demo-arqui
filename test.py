@@ -25,13 +25,13 @@ class TestCalc(unittest.TestCase):
 
 		#-- Case 1232+13123*8989/89899*465465+54646*789798/465456
 		self.assertEqual(calc.get_terms(string=self.cases[4], position=10),('13123','8989','/'))
-		
+
 
 	def test_calc(self):
 		'''
-			Check if calculator can performe 4 basic operations properly 
+			Check if calculator can performe 4 basic operations properly
 		'''
-		self.assertEqual(calc.calc('+','1','1'), 2)
+		self.assertEqual(calc.calc('+','1','1'), 1)
 		self.assertEqual(calc.calc('-','11','111'), -100)
 		self.assertEqual(calc.calc('*','11','11'), 121)
 		self.assertEqual(calc.calc('/','33','3'), 11)
@@ -40,7 +40,7 @@ class TestCalc(unittest.TestCase):
 
 	def test_run(self):
 		'''
-			Validate calculation in a long string 
+			Validate calculation in a long string
 		'''
 		#-- Case 1232+13123*8989/89899*465465+54646*789798/465456
 		self.assertEqual(calc.run(string=self.cases[4]), 610784036)
